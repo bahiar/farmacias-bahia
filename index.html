@@ -2,21 +2,19 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Farmacias de Turno - Bahía Blanca</title>
     <link rel="manifest" href="manifest.json">
     <meta name="theme-color" content="#1a2b3c">
-    <style>
-        body, html { margin: 0; padding: 0; height: 100%; overflow: hidden; background-color: #1a2b3c; }
-        iframe { width: 100%; height: 100%; border: none; }
-    </style>
-</head>
-<body>
-    <iframe src="https://bahi.ar" title="Buscador bahi.ar"></iframe>
     <script>
+        // Redirección inmediata al sitio oficial
+        window.location.href = "https://bahi.ar";
+        
         if ('serviceWorker' in navigator) {
             navigator.serviceWorker.register('sw.js');
         }
     </script>
+</head>
+<body style="background-color: #1a2b3c;">
 </body>
 </html>
